@@ -1,0 +1,21 @@
+- What strings 
+- Why strings
+- Data type 
+- Interning -> string pool -> saving memory 
+- new -> allocating new memory
+- immutability 
+
+- memory allocation -> Java stores the reference to the string object, and the actual string is stored in String Pool part of heap memory.
+
+- == & str.equals()
+== -> compare references
+str.equals() -> first checks address and then compares values
+
+- strings does not have null character at last but internally they are stored as char array
+
+
+*** STRING BUILDER ***
+- Class, is a mutable sequence of characters used to perform manipulations in strings like appending another string, inserting , deleting without creating a new string
+- Efficient than strings
+- after performing operations converted back to string using (sb.toString(str)) , although sb is implicitly converted into string but for more clarity we use this method
+- default capacity of string builder is to hold 16 characters and it changes dynamically if the size of string builder increses

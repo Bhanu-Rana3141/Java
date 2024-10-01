@@ -1,0 +1,30 @@
+/*
+Heap Memory:
+
++----------------------+
+|  String: "Bhanu"     |
+|  (Immutable String)  |
++----------------------+
+
++----------------------+
+|  StringBuilder       |
+|  +-----------------+ |
+|  | char[] array    | |
+|  | ['B', 'h', 'a', | |
+|  |  'n', 'u']      | |
+|  +-----------------+ |
+|  Capacity: 32 bytes  |
++----------------------+
+
+Temporary Variables (Stack):
++----------------------+
+|  start: int (0)      |
+|  end: int (4)        |
+|  temp: char (temp)   |
++----------------------+
+
++----------------------+
+|  Temporary String    |
+|  (For output display)|
++----------------------+
+ */

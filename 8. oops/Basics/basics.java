@@ -1,10 +1,11 @@
+package Basics;
 /*
- * CLASS 
+ - CLASS 
  * is a blueprint for an object
  * its a logical construct
  * class name is also called a non-primitive data type
  
- * OBJECT 
+ - OBJECT 
  * instance of a class
  * physical reality , occupies space in memory
  * Classified in 3 categories 
@@ -12,30 +13,35 @@
  2. identity of object -> how a object is different from another object
  3. Behaviour of object 
  
- * INSTANCE -> a physical stuff of that class
+ - INSTANCE -> a physical stuff of that class
  
- * . -> operator used with object name to fetch instance variable from class. In java . operator is called separator 
+ - . -> operator used with object name to fetch instance variable from class. In java . operator is called separator 
  * INSTANCE VARIABLE -> variable declared inside a class
  
- * NEW 
+ - NEW 
  * keyword used to allocate memory dynamically i.e during runtime
  * Student student1 = new Student()
  * student1 variable of Student class will be stored in stack , and it will refer to object created which will present in heap with its properties/attributes
 
- * CONSTRUCTORS 
+ - CONSTRUCTORS 
  * defines what has to be done when a object will be created, when a object instantiates first of all constructor is called
  * DEFAULT CONSTRUCTOR - when a object is created , and no parameter is passed , in that case default constructor will be called and that will initialise all the attributes of that class with default values
  
- * this 
+ - this 
  * keyword that refers to current object and used to initialise the attributes of current object in class
 
-
- * final
+ - final
  * keyword that makes a value constant and can't be modified in case of primitive variables but in case of non-primitive value can be changed but it can't be re-assigned
  * It should be initialsed while declaring
  
- * static 
+ - static 
  * properties that are not directly related to an object , but are common to all the objects of that class are declared as static
+ 
+- INHERITENCE
+
+ - GETTERS AND SETTERS
+ * if a attribute is declared as a private attribute in that case it can neither be changed nor accessed , so for that getters and setters are used
+
  */
 
 class Student {
@@ -91,7 +97,9 @@ public class basics {
         // student1.changeName("Rana");
         // System.out.println(student1.name);
 
-        // System.out.println();
+
+        // PASSING OBJECT 
+
         // Student random = new Student(student1);
         // Student random = new Student();
         // System.out.println(random.name);
@@ -104,7 +112,5 @@ public class basics {
         final Student student1 = new Student("Bhanu");
         student1.name = "Rana";
         System.out.println(student1.name);
-
-
     }
 }

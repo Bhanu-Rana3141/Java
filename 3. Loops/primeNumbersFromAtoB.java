@@ -8,7 +8,7 @@ public class primeNumbersFromAtoB {
         System.out.print("Enter b: ");
         int b = sc.nextInt();
 
-        for(int i = a; i<=b; i++) {
+        for(int i = a; i <= b; i++) {
             if(i == 0 || i == 1) continue;
             boolean flag = true;
             for(int j = 2; j<=i/2; j++) {

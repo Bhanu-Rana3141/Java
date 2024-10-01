@@ -1,9 +1,10 @@
-import java.util.ArrayList;
-import java.util.Collections;
+// import java.util.ArrayList;
+// import java.util.Collections;
+import java.util.*;
 
 public class arraylist {
 
-    static void print(ArrayList<Integer> list) {
+    public static void print(ArrayList<Integer> list) {
         for(int i = 0; i<list.size(); i++) {
             System.out.print(list.get(i) + " ");
         }
@@ -12,9 +13,9 @@ public class arraylist {
     public static void main(String[] args) {
         
         ArrayList<Integer> list =  new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
+        list.add(100);
+        list.add(20);
+        list.add(10);
         print(list);
 
         list.add(1, 10);
@@ -26,6 +27,7 @@ public class arraylist {
 
         Collections.sort(list);
         print(list);
-        
+
+        Collections.sort(list);
     }    
 }
